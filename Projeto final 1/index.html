@@ -1,37 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sweet Dreams</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pedido</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
+<body style="background: linear-gradient(rgba(221,128,164,0.5), rgb(161,71,124));">
+  <div class="pedido">
+    <form id="formulario">
+      <div>
+        <!-- botao voltar: botão dentro de link ou apenas link estilizado -->
+        <a href="index.html"><button type="button">&larr; Voltar</button></a>
+      </div>
+      <br>
 
-<body>
-    <section class="fundo">
-        <video class="video_fundo" autoplay muted>
-            <source src="imagem/bolo.mp4" type="video/mp4">
-        </video>
-        <header>
-            <nav>
-                <img src="imagem/logomarca-para-confeitaria1-1086x1536.png" alt="Logo" class="logo">
-                <ul class="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="cardapio.html">Cardápio</a></li>
-                    <li><a href="localizacao.html">Localização</a></li>
-                    <li><a href="historia.html">Sobre nós</a></li>
-                    <li><a href="pedido.html">Pedido</a></li>
-                </ul>
-            </nav>
-        </header>
+      <div>
+        <label for="nome">Nome: </label>
+        <input type="text" id="nome" />
+      </div>
+      <br>
 
-        <div class="conteudo">
-            <h1>Sweet Dreams</h1>
-        </div>
+      <div>
+        <label for="email">Email: </label>
+        <input type="email" id="email" />
+      </div>
+      <br>
 
-    </section>
+      <div>
+        <label for="senha">Senha: </label>
+        <input type="password" id="senha" />
+      </div>
+      <br>
 
+      <div>
+        <h3>Opções de sabores:</h3>
+        <select id="bolo">
+          <option value="Bolo de Ninho">Bolo de Ninho</option>
+          <option value="Bolo de Morango">Bolo de Morango</option>
+          <option value="Bolo de Chocolate">Bolo de Chocolate</option>
+          <option value="Bolo de Cenoura">Bolo de Cenoura</option>
+        </select>
+      </div>
+      <br>
+
+      <div>
+        <h3>Opções de bebidas:</h3>
+        <select id="suco">
+          <option value="Refrigerante">Refrigerante</option>
+          <option value="Suco">Suco</option>
+          <option value="Água com gás">Água com gás</option>
+          <option value="Água sem gás">Água sem gás</option>
+        </select>
+      </div>
+      <br>
+
+      <div>
+        <label>Formas de Pagamento:</label><br>
+        <input type="radio" id="debito" name="pagamento" value="Débito"><label for="debito"> Débito</label>
+        <input type="radio" id="credito" name="pagamento" value="Crédito"><label for="credito"> Crédito</label>
+        <input type="radio" id="pix" name="pagamento" value="Pix"><label for="pix"> Pix</label>
+      </div>
+      <br>
+
+      <div>
+        <button type="submit">Finalizar pedido</button>
+      </div>
+      <br>
+    </form>
+
+    <div id="resultado">Os dados do formulário vão ser exibidos aqui</div>
+  </div>
+
+  <script src="app.js"></script>
 </body>
-
 </html>
