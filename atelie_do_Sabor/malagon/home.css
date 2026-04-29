@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Space Grotesk", sans-serif;
+}
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img/fundo.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    min-height:100px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content:flex-end;
+    gap: 15px;
+    margin-right: 60px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 5px 5px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+}
+
+header nav ul li{
+     margin-top: 25px;
+}
+
+header nav ul li a:hover{
+    color:#ffffffda;
+    background-color: rgb(209, 112, 22);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+ul li.active a{
+    background-color: rgb(209, 112, 22);
+    color: #ffffffda;
+    border-radius: 10px;
+}
+
+.logo img{
+    float: left;
+    width: 120px;
+    margin: 5px;
+}
+button{
+    border: 1px solid ;
+    padding: 8px 10px;
+    font-family: 14px;
+    border-radius: 5px;
+    font-size: 15px;
+    position: ;
+   
+}
+.btn{
+    background-color: rgb(209, 112, 22);
+}
